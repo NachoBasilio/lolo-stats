@@ -1,15 +1,17 @@
 import { Routes, Route } from "react-router-dom"
 
 
-import RutasPublicas from "./routes/RutasPublicas"
-import RutasPrivadas from "./routes/RutasPrivadas"
+
+
+import RutasPublicas from "./auth/routes/RutasPublicas"
+import RutasPrivadas from "./stats/routes/RutasPrivadas"
 
 
 
 
 
 export default function AppRouter() {
-  const logaut = false
+  const logaut = true
   return (
     <>
 

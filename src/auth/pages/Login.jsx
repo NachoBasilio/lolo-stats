@@ -38,7 +38,7 @@ export default function Login() {
           <Grid container
             maxWidth="400px"
           >
-            <Typography variant="h4" color="initial">Incia secion</Typography>
+            <Typography variant="h4" color="initial">Inicia secion</Typography>
             <Grid item xs={12} sx={{mt:2}}
             >
               <TextField

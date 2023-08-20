@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
 import PropTypes from 'prop-types'
+import Home from "../page/Home";
 
 export default function RutasPrivadas({logaut}) {
 
