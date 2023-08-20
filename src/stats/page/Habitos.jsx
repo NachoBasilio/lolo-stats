@@ -117,8 +117,6 @@ export default function Habitos() {
                 <Typography
                 variant="p"
                 color="black"
-                
-                
                 >
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ducimus. Quo, dolorem hic facere animi reiciendis repellendus asperiores itaque facilis nihil corrupti nisi voluptatem veniam ipsa dolores odio dolore voluptas.
                 </Typography>
