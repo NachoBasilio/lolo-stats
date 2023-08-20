@@ -4,26 +4,43 @@ import {Link as RouterLink } from "react-router-dom";
 export default function Header() {
   return (
     <Grid
-    container
-    direction="row"
-    justifyContent="space-between"
-    alignItems="center"
-    position="fixed"
-    backgroundColor="primary.main"
-    width="80%"
-    height="80px"
-    top={0}
-    left={0}
-    right={0}
-    ml="auto"
-    mr="auto"
-  >
+      container
+      direction="row"
+      justifyContent="space-between"
+      alignItems="center"
+      sx={{
+        position: 'fixed',
+        backgroundColor: 'primary.main',
+        width: { xs: '100%', sm: '100%', md: '80%' },
+        height: { sx: "auto", sm: "80px", md: "80px" },
+        top: 0,
+        left: 0,
+        right: 0,
+        padding: { xs: '10px', sm: '10px', md: '10px' },
+        ml: 'auto',
+        mr: 'auto',
+        paddingX: { xs: '16px', sm: '0' }, 
+        justifyContent: { xs: 'center', sm: 'space-between' },
+        zIndex: 1000, // Ensure the header is above other content
+      }}
+    >
     <Grid item ml={2}
       sx={{
         fontWeight: "bold",
       }}
     >
-      <Typography variant="h3" color="initial">LoLoStats</Typography>
+      <Typography 
+      variant="h3" 
+      color="initial"
+      sx={{
+        fontWeight: "bold",
+        fontSize: {
+          xs: "40px",
+          sm: "40px",
+          md: "60px",
+        },
+      }}
+      >LoLoStats</Typography>
     </Grid>
 
     {/* Nav */}
@@ -32,6 +49,17 @@ export default function Header() {
       container 
       direction="row" 
       justifyContent="space-between"
+      sx={{
+        justifyContent: {
+          xs: "center",
+          sm: "space-between",
+        },
+        display:{
+          xs: "none",
+          sm: "flex",
+          
+        }
+      }}
       width="auto"
       mr={2}
     >
